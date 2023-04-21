@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.header {
+  color: white;
+  max-width: 70rem;
+  height: 6rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Iceland', cursive;
+  font-size: 3rem;
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--color-textPrimary);
+}
+
+.list a:hover,
+.list a.active {
+  border-bottom: 2px solid var(--color-textPrimary);
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+}
+
+.button:hover {
+  background-color: var(--color-secondary);
+}
