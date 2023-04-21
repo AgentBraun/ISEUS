@@ -1,0 +1,17 @@
+.navBar-meni {
+    display: flex;
+    flex-direction: row;
+}
+
+.navBar-meni li {
+    padding-right: 50px;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+.navBar-meni a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.navBar {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 30px 0 30px;
+    height: 5%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 5% 0 5%;
+}
