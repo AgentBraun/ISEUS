@@ -8,25 +8,17 @@ body {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
-    rgba(2, 0, 36, 1) 10%,
-    rgba(9, 9, 121, 1) 55%,
-    rgba(24, 107, 239, 1) 100%
+    rgba(2, 0, 36, 1) 5%,
+    rgba(9, 9, 121, 1) 40%,
+    rgba(24, 107, 239, 1) 110%
   );
 }
 
 :root {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 
   --color-textPrimary: white;
 
@@ -35,6 +27,7 @@ body {
   --color-Black: rgba(2, 0, 36, 1);
 
   --color-secondary: #021e65;
+  --color-BtnColor: rgb(116, 160, 255);
 }
 
 ul {

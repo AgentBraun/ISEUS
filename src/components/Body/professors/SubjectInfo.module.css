@@ -1,10 +1,14 @@
-.navbar {
+.subjectInfo {
+  min-height: 36vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 7px;
   padding: 0 32px;
-  margin-top: 10px;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .editInfoBtn {
@@ -12,5 +16,73 @@
 }
 
 .infoBtn {
-  margin-left: 20px;
+  margin-left: 1rem;
+}
+
+.body {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+}
+
+.keys {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 700;
+}
+
+.keys p,
+.values p {
+  margin: 7px 0 0 0;
+}
+
+.values {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 500;
+}
+
+.qrCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr {
+  background-image: url('https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.text p {
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.icon:hover {
+  color: blue;
+}
+
+.fa-Pen-to-square:hover {
+  color: blue;
 }
