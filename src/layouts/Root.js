@@ -1,6 +1,6 @@
-import LandingNav from '../components/UNav/LandingNav';
-
 import { Outlet } from 'react-router-dom';
+
+import LandingNav from '../components/UNav/LandingNav';
 
 function RootLayout() {
   return (

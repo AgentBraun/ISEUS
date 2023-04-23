@@ -1,8 +1,12 @@
+import SubjectInfo from '../../components/Body/professors/SubjectInfo';
+
+import classes from './Professors.module.css';
+
 const ProfessorsPage = () => {
   return (
-    <div>
-      <h1>Professors page</h1>
-    </div>
+    <>
+      <SubjectInfo />
+    </>
   );
 };
 

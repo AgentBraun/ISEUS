@@ -1,7 +1,7 @@
 const ExercisesPage = () => {
   return (
     <div>
-      <h1>Exercises page</h1>
+      <h1>Vježbe</h1>
     </div>
   );
 };

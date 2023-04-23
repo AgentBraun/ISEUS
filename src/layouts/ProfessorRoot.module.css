@@ -1,0 +1,14 @@
+.professorBody {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.leftNav {
+  width: 20%;
+}
+
+.upperNav {
+  width: 80%;
+  margin-left: 1rem;
+}

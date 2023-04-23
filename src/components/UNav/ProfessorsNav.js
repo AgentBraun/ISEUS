@@ -1,77 +1,68 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-import classes from './LandingNav.module.css';
+import classes from './ProfessorsNav.module.css';
 
-const LandingNav = () => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/profesori');
-  };
-
+const ProfessorsNav = () => {
   return (
     <headers className={classes.header}>
-      <p className={classes.logo}>ISEUS</p>
-      <nav>
+      <nav className={classes.nav}>
         <ul className={classes.list}>
           <li>
             <NavLink
-              to='/'
+              to='/profesori/'
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
               end
             >
-              Početna
+              Nastavnici
             </NavLink>
           </li>
           <li>
             <NavLink
-              to='/onama'
+              to='/profesori/predavanja'
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              O nama
+              Predavanja
             </NavLink>
           </li>
           <li>
             <NavLink
-              to='/kontakt'
+              to='/profesori/vjezbe'
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              Kontakt
+              Vježbe
             </NavLink>
           </li>
           <li>
             <NavLink
-              to='/novosti'
+              to='/profesori/ispiti'
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              Novosti
+              Ispiti
             </NavLink>
           </li>
           <li>
             <NavLink
-              to='/prijavagresaka'
+              to='/profesori/studenti'
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
             >
-              Prijava grešaka
+              Studenti
             </NavLink>
           </li>
         </ul>
+        <p className={classes.title}>prof. dr. Niko Nikić</p>
       </nav>
-      <button type='button' onClick={handleClick} className={classes.button}>
-        Prijavi se
-      </button>
     </headers>
   );
 };
 
-export default LandingNav;
+export default ProfessorsNav;
