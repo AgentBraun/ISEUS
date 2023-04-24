@@ -7,7 +7,6 @@ import {
   faPenToSquare,
   faCircleInfo,
 } from '@fortawesome/free-solid-svg-icons';
-import ButtonBlue from '../../UI/ButtonBlue';
 
 const SubjectInfo = () => {
   return (
@@ -15,18 +14,10 @@ const SubjectInfo = () => {
       <div className={classes.navbar}>
         <div className={classes.editInfoBtn}>
           <div className={classes.editBtn}>
-            <FontAwesomeIcon
-              className={classes.icon}
-              icon={faPenToSquare}
-              style={{ color: '#ffffff' }}
-            />
+            <FontAwesomeIcon icon={faPenToSquare} className={classes.icon} />
           </div>
           <div className={classes.infoBtn}>
-            <FontAwesomeIcon
-              className={classes.icon}
-              icon={faCircleInfo}
-              style={{ color: '#ffffff' }}
-            />
+            <FontAwesomeIcon className={classes.icon} icon={faCircleInfo} />
           </div>
         </div>
         <h2>Podaci o predmetu</h2>
@@ -58,14 +49,9 @@ const SubjectInfo = () => {
         <div className={classes.qrCode}>
           <div className={classes.qr}></div>
           <div className={classes.text}>
-            <p>Preuzmite QR kod od predmeta</p>
-            <ButtonBlue>
-              <FontAwesomeIcon
-                className={classes.icon}
-                icon={faFileArrowDown}
-                style={{ color: '#ffffff' }}
-              />
-            </ButtonBlue>
+            <p>Preuzmite QR kod</p>
+
+            <FontAwesomeIcon className={classes.icon} icon={faFileArrowDown} />
           </div>
         </div>
       </div>

@@ -1,21 +1,18 @@
-//import { useState } from 'react';
+import { useState } from 'react';
 
 import classes from './ButtonToggle.module.css';
 
 const ToggleBtn = ({ toggled /*onClick*/ }) => {
-  //onst [isToggled, toggle] = useState(toggled);
+  const [isToggled, toggle] = useState(toggled);
 
-  /* const callback = () => {
+  const callback = () => {
     toggle(!isToggled);
-    onClick(!isToggled);
-  };*/
+    //onClick(!isToggled);
+  };
 
   return (
     <label className={classes}>
-      <input
-        type='checkbox'
-        //defaultChecked={isToggled} /*onClick={callback}*/
-      />
+      <input type='checkbox' defaultChecked={isToggled} onClick={callback} />
       <span />
     </label>
   );
