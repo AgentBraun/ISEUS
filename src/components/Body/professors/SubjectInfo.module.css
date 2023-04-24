@@ -5,6 +5,10 @@
   padding: 0 32px;
 }
 
+.active {
+  min-height: 8vh;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

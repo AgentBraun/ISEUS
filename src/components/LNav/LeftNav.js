@@ -1,4 +1,4 @@
-import ButtonB from '../UI/ButtonBordered';
+import ButtonB from '../UI/Buttons/ButtonBordered';
 
 import classes from './LeftNav.module.css';
 

@@ -6,8 +6,12 @@
   height: 100vh;
 }
 
+.nav h1 {
+  margin: 10px 0;
+}
+
 .logo {
-  margin: 1rem 0;
+  margin: 10px 0;
   font-family: 'Iceland', cursive;
   font-size: 3rem;
 }
