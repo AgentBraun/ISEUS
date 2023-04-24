@@ -59,8 +59,8 @@
 .qr {
   background-image: url('https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg');
   background-size: cover;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
 }
 
 .text {
@@ -81,8 +81,4 @@
 
 .icon:hover {
   color: var(--color-lightBlue);
-}
-
-.editBtn FontAwesomeIcon:hover {
-  color: blue;
 }
