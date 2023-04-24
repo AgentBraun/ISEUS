@@ -1,6 +1,7 @@
 .subjectInfo {
   min-height: 36vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-blackTransparent);
+  border-radius: 5px;
   margin-top: 7px;
   padding: 0 32px;
 }

@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     180deg,
@@ -28,6 +28,8 @@ body {
 
   --color-secondary: #021e65;
   --color-BtnColor: rgb(116, 160, 255);
+
+  --color-blackTransparent: rgba(0, 0, 0, 0.3);
 }
 
 ul {

@@ -1,0 +1,35 @@
+.professorsPage {
+  background-color: var(--color-blackTransparent);
+  padding: 0 32px 32px 32px;
+  margin-top: 7px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.existingProfesors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.professorsRequest {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

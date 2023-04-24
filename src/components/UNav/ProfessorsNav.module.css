@@ -3,7 +3,6 @@
 .header {
   color: white;
   max-width: 70rem;
-  height: 6rem;
   margin: 0 auto;
 }
 
@@ -23,9 +22,9 @@
 }
 
 .nav {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-blackTransparent);
   padding: 5px 2rem;
-  border-radius: 20px 0 0 20px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
 }

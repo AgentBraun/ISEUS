@@ -1,0 +1,27 @@
+.existingUser {
+  display: flex;
+  margin-top: 10px;
+}
+
+.action {
+  margin-left: 20px;
+}
+
+.icon {
+  color: #fff;
+  font-size: 18px;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.iconAccept {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.iconAccept:hover {
+  color: greenyellow;
+}
