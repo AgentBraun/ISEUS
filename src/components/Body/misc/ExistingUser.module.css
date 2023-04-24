@@ -1,6 +1,6 @@
 .existingUser {
   display: flex;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .action {
@@ -13,7 +13,7 @@
 }
 
 .icon:hover {
-  color: red;
+  color: rgb(255, 36, 36);
 }
 
 .iconAccept {
@@ -23,5 +23,5 @@
 }
 
 .iconAccept:hover {
-  color: greenyellow;
+  color: rgb(152, 253, 0);
 }

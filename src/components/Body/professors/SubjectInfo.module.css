@@ -1,5 +1,5 @@
 .subjectInfo {
-  min-height: 36vh;
+  min-height: 40vh;
   background-color: var(--color-blackTransparent);
   border-radius: 5px;
   margin-top: 7px;
@@ -43,7 +43,7 @@
 
 .keys p,
 .values p {
-  margin: 7px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .values {
@@ -64,8 +64,8 @@
 .qr {
   background-image: url('https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg');
   background-size: cover;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
 }
 
 .text {
@@ -76,7 +76,7 @@
 }
 
 .text p {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .icon {

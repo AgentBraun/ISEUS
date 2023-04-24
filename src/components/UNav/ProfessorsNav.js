@@ -59,7 +59,10 @@ const ProfessorsNav = () => {
             </NavLink>
           </li>
         </ul>
-        <p className={classes.title}>prof. dr. Niko Nikić</p>
+        <div className={classes.profile}>
+          <p className={classes.title}>prof. dr. Niko Nikić</p>
+          <div src='' alt='' className={classes.profilePicture} />
+        </div>
       </nav>
     </headers>
   );

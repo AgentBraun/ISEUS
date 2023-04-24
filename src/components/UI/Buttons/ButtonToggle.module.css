@@ -36,7 +36,7 @@ span:before {
 }
 
 input:checked + span {
-  background-color: var(--color-BtnColor);
+  background-color: var(--color-lightBlue);
 }
 
 input:checked + span:before {
