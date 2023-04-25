@@ -1,10 +1,6 @@
 import classes from './ExistingUser.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faDeleteLeft,
-  faCircleCheck,
-  faUserXmark,
-} from '@fortawesome/free-solid-svg-icons';
+import { faDeleteLeft, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 const ExistingUser = (props) => {
   const user = props.userData;
