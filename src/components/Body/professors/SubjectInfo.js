@@ -16,7 +16,6 @@ const SubjectInfo = () => {
   const toggleHandler = (toggled) => {
     setToggled(!toggled);
   };
-  console.log('component redner');
 
   return (
     <div

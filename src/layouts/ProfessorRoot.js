@@ -4,6 +4,7 @@ import ProfessorsNav from '../components/UNav/ProfessorsNav';
 import LeftNav from '../components/LNav/LeftNav';
 
 import classes from './ProfessorRoot.module.css';
+import SubjectInfo from '../components/Body/professors/SubjectInfo';
 
 function professorsRootLayout() {
   return (
@@ -14,6 +15,7 @@ function professorsRootLayout() {
         </div>
         <div className={classes.upperNav}>
           <ProfessorsNav />
+          <SubjectInfo />
           <main>
             <Outlet />
           </main>

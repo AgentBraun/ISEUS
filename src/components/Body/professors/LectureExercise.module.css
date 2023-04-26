@@ -1,0 +1,43 @@
+.lecture {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.lectureIndex {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureName {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureDuration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureDate {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureScan {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.qr {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}

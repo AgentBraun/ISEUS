@@ -1,0 +1,74 @@
+.lecturesPage {
+  width: 100%;
+  background-color: var(--color-blackTransparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7px 0 0 0;
+  padding: 0 2rem 2rem 2rem;
+  min-height: 83vh;
+}
+
+.lecturesInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lectures {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.tableInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tableInfoLine {
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+
+.tableInfo p {
+  margin-bottom: 5px;
+}
+
+.lectureIndex {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureName {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureDuration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureDate {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureScan {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lectureQR {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
