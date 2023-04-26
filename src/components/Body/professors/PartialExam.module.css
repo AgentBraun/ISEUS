@@ -1,0 +1,69 @@
+.partialExam {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.tableInfoLineSpace {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tableInfoLine {
+  width: 80%;
+  border-top: 1px solid white;
+}
+
+.examName,
+.examPartial,
+.examType,
+.examDate,
+.examDemand,
+.examDificultFactor,
+.examResults {
+  display: flex;
+  justify-content: center;
+}
+
+.examSpace {
+  flex: 3;
+}
+
+.examName {
+  flex: 3;
+}
+
+.examPartial {
+  flex: 3;
+}
+
+.examType {
+  flex: 2;
+}
+
+.examDate {
+  flex: 2;
+}
+
+.examDemand {
+  flex: 3;
+}
+
+.examDificultFactor {
+  flex: 2;
+}
+
+.examResults {
+  flex: 2;
+}
+
+.icon {
+  color: white;
+  font-size: 20px;
+}
+
+.icon:hover {
+  color: var(--color-lightBlue);
+}

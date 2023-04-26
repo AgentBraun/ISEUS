@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: 1px solid white;
   font-size: 14px;
 }
 

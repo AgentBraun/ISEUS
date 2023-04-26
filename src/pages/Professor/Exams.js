@@ -1,4 +1,5 @@
 import Exam from '../../components/Body/professors/Exam';
+import PartialExam from '../../components/Body/professors/PartialExam';
 import classes from './Exams.module.css';
 
 const DUMMY_EXAMS = [
@@ -52,7 +53,10 @@ const ExamsPage = () => {
         <>
           <Exam data={exam} />
           {exam.partialExams &&
-            exam.partialExams.map((partialExam) => <Exam data={partialExam} />)}
+            exam.partialExams.map((partialExam) => (
+              <PartialExam data={partialExam} />
+            ))}
+          <div className={classes.tableInfoLineThin}></div>
         </>
       ))}
     </div>
