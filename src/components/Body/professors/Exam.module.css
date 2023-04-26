@@ -1,0 +1,56 @@
+.exam {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid white;
+  font-size: 14px;
+}
+
+.examName,
+.examPartial,
+.examType,
+.examDate,
+.examDemand,
+.examDificultFactor,
+.examResults {
+  display: flex;
+  justify-content: center;
+}
+
+.examName {
+  flex: 3;
+}
+
+.examPartial {
+  flex: 3;
+}
+
+.examType {
+  flex: 2;
+}
+
+.examDate {
+  flex: 2;
+}
+
+.examDemand {
+  flex: 3;
+}
+
+.examDificultFactor {
+  flex: 2;
+}
+
+.examResults {
+  flex: 2;
+}
+
+.icon {
+  color: white;
+  font-size: 20px;
+}
+
+.icon:hover {
+  color: var(--color-lightBlue);
+}
