@@ -1,0 +1,78 @@
+.exercisesPage {
+  width: 100%;
+  background-color: var(--color-blackTransparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7px 0 0 0;
+  padding: 0 2rem 2rem 2rem;
+  min-height: 83vh;
+}
+
+.exercisesInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.exercises {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.tableInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tableInfoLine {
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+
+.tableInfo p {
+  margin-bottom: 5px;
+}
+
+.exerciseIndex {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.exerciseName {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.exerciseDuration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.exerciseDate {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.exerciseScan {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.exerciseQR {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  font-size: 2rem;
+}
