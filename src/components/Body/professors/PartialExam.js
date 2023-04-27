@@ -11,6 +11,7 @@ const PartialExam = (props) => {
         <div className={classes.tableInfoLine}></div>
       </div>
       <div className={classes.partialExam}>
+        <div className={classes.examEdit}></div>
         <div className={classes.examSpace}></div>
         <p className={classes.examName}>{partialExam.name}</p>
         <p className={classes.examType}></p>

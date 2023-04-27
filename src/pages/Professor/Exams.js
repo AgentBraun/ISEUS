@@ -1,5 +1,7 @@
 import Exam from '../../components/Body/professors/Exam';
 import PartialExam from '../../components/Body/professors/PartialExam';
+import ButtonBordered from '../../components/UI/Buttons/ButtonBordered';
+
 import classes from './Exams.module.css';
 
 const DUMMY_EXAMS = [
@@ -13,15 +15,16 @@ const DUMMY_EXAMS = [
     partialExams: [
       {
         id: '1',
-        name: 'prva parcijala',
+        name: 'Prva parcijala',
         date: '15.03.2023',
         dificultFactor: '20/100',
       },
       {
         id: '2',
-        name: 'druga parcijala',
+        name: 'Druga parcijala',
         date: '10.06.2023',
         dificultFactor: '20/100',
+        demand: 'Prva parcijala',
       },
     ],
   },
@@ -30,7 +33,7 @@ const DUMMY_EXAMS = [
     name: 'Završni ispit',
     type: 'pismeni',
     date: '25.06.2023',
-    demand: '',
+    demand: 'Integralni ispit',
     dificultFactor: '50/100',
   },
 ];
@@ -40,6 +43,7 @@ const ExamsPage = () => {
     <div className={classes.examsPage}>
       <h2 className={classes.title}>Ispiti</h2>
       <div className={classes.tableInfo}>
+        <p className={classes.examEdit}>Uredi</p>
         <p className={classes.exam}>Ispit</p>
         <p className={classes.examPartial}>Parcijale</p>
         <p className={classes.examType}>Vrsta ispita</p>
@@ -59,6 +63,9 @@ const ExamsPage = () => {
           <div className={classes.tableInfoLineThin}></div>
         </>
       ))}
+      <div className={classes.button}>
+        <ButtonBordered>+</ButtonBordered>
+      </div>
     </div>
   );
 };

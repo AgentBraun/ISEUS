@@ -6,6 +6,7 @@
   font-size: 14px;
 }
 
+.examEdit,
 .examName,
 .examPartial,
 .examType,
@@ -15,6 +16,10 @@
 .examResults {
   display: flex;
   justify-content: center;
+}
+
+.examEdit {
+  flex: 1;
 }
 
 .examName {
@@ -42,7 +47,7 @@
 }
 
 .examResults {
-  flex: 2;
+  flex: 1;
 }
 
 .icon {

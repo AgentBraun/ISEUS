@@ -27,6 +27,10 @@
   justify-content: center;
 }
 
+.examEdit {
+  flex: 1;
+}
+
 .examSpace {
   flex: 3;
 }
@@ -56,7 +60,7 @@
 }
 
 .examResults {
-  flex: 2;
+  flex: 1;
 }
 
 .icon {
