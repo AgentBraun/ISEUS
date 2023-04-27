@@ -55,10 +55,10 @@ const ExamsPage = () => {
       <div className={classes.tableInfoLine}></div>
       {DUMMY_EXAMS.map((exam) => (
         <>
-          <Exam data={exam} />
+          <Exam key={exam.id} data={exam} />
           {exam.partialExams &&
             exam.partialExams.map((partialExam) => (
-              <PartialExam data={partialExam} />
+              <PartialExam key={partialExam.id} data={partialExam} />
             ))}
           <div className={classes.tableInfoLineThin}></div>
         </>

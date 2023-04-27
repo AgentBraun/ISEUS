@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
   --color-secondary: #021e65;
   --color-BtnColor: rgb(116, 160, 255);
 
-  --color-blackTransparent: rgba(0, 0, 0, 0.3);
+  --color-blackTransparent: rgba(0, 0, 0, 0.2);
 }
 
 ul {
