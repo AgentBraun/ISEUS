@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .header {
   color: white;
-  max-width: 70rem;
+  width: 90%;
   height: 6rem;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

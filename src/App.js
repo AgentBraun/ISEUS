@@ -18,6 +18,7 @@ import LecturesPage from './pages/Professor/Lectures';
 import ExercisesPage from './pages/Professor/Exercises';
 import ExamsPage from './pages/Professor/Exams';
 import StudentsPage from './pages/Professor/Students';
+import LecturesPageAdd from './pages/Professor/Lectures/LecturesPageAdd';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,13 @@ const router = createBrowserRouter([
     element: <ProfessorRootLayout />,
     children: [
       { index: true, element: <ProfessorsPage /> },
-      { path: 'predavanja', element: <LecturesPage /> },
+      {
+        path: 'predavanja',
+        children: [
+          { index: true, element: <LecturesPage /> },
+          { path: 'dodajPredavanja', element: <LecturesPageAdd /> },
+        ],
+      },
       { path: 'vjezbe', element: <ExercisesPage /> },
       { path: 'ispiti', element: <ExamsPage /> },
       { path: 'studenti', element: <StudentsPage /> },

@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import Lecture from '../../components/Body/professors/LectureExercise';
 import ButtonBordered from '../../components/UI/Buttons/ButtonBordered';
 
@@ -19,6 +20,14 @@ const DUMMY_LECTURES = [
 ];
 
 const LecturesPage = () => {
+  const navigate = useNavigate();
+
+  const navigateHandler = (e) => {
+    e.preventDefault();
+    console.log('radi');
+    navigate('dodajPredavanja');
+  };
+
   return (
     <div className={classes.lecturesPage}>
       <h2 className={classes.title}>Predavanja</h2>
@@ -40,7 +49,7 @@ const LecturesPage = () => {
           <Lecture key={lecture.index} info={lecture} />
         ))}
       </div>
-      <ButtonBordered>+</ButtonBordered>
+      <ButtonBordered onClick={navigateHandler}>+</ButtonBordered>
     </div>
   );
 };

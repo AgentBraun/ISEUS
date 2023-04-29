@@ -4,7 +4,7 @@ import classes from './ProfessorsNav.module.css';
 
 const ProfessorsNav = () => {
   return (
-    <headers className={classes.header}>
+    <header className={classes.header}>
       <nav className={classes.nav}>
         <ul className={classes.list}>
           <li>
@@ -64,7 +64,7 @@ const ProfessorsNav = () => {
           <div src='' alt='' className={classes.profilePicture} />
         </div>
       </nav>
-    </headers>
+    </header>
   );
 };
 
