@@ -1,0 +1,10 @@
+.lecturesPageAdd {
+  width: 100%;
+  background-color: var(--color-blackTransparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7px 0 0 0;
+  padding: 0 2rem 2rem 2rem;
+  min-height: 83vh;
+}

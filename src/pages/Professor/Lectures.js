@@ -24,7 +24,6 @@ const LecturesPage = () => {
 
   const navigateHandler = (e) => {
     e.preventDefault();
-    console.log('radi');
     navigate('dodajPredavanja');
   };
 
