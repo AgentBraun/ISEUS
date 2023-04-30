@@ -5,14 +5,14 @@ import classes from './Exercises.module.css';
 
 const DUMMY_EXERCISES = [
   {
-    index: '1',
-    name: 'Uvod u baze podataka',
+    id: '1',
+    title: 'Uvod u baze podataka',
     duration: '3',
     date: '20.02.2023',
   },
   {
-    index: '2',
-    name: 'Razvojni ciklus baze podataka',
+    id: '2',
+    title: 'Razvojni ciklus baze podataka',
     duration: '3',
     date: '27.02.2023',
   },
@@ -37,7 +37,7 @@ const ExercisesPage = () => {
         </div>
         <div className={classes.tableInfoLine}></div>
         {DUMMY_EXERCISES.map((exercise) => (
-          <Exercise key={exercise.index} info={exercise} />
+          <Exercise key={exercise.id} info={exercise} />
         ))}
       </div>
       <ButtonBordered className={classes.button}>+</ButtonBordered>
