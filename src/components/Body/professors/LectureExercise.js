@@ -10,12 +10,15 @@ const LectureExamLine = (props) => {
   const data = props.info;
   return (
     <div className={classes.lecture}>
-      <p className={classes.lectureIndex}>{data.index}</p>
-      <p className={classes.lectureName}>{data.name}</p>
+      <p className={classes.lectureIndex}>{props.counter}</p>
+      <p className={classes.lectureName}>{data.title}</p>
       <p className={classes.lectureDuration}>{data.duration}</p>
       <p className={classes.lectureDate}>{data.date}</p>
       <div className={classes.lectureScan}>
-        <ButtonToggle onClick={toggleHandler} toggled={true}></ButtonToggle>
+        <ButtonToggle
+          onClick={toggleHandler}
+          toggled={data.scaning}
+        ></ButtonToggle>
       </div>
       <div className={classes.qr}>
         <FontAwesomeIcon className={classes.icon} icon={faFileArrowDown} />

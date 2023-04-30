@@ -1,26 +1,30 @@
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
 import Lecture from '../../components/Body/professors/LectureExercise';
 import ButtonBordered from '../../components/UI/Buttons/ButtonBordered';
 
 import classes from './Lectures.module.css';
 
-const DUMMY_LECTURES = [
-  {
-    index: '1',
-    name: 'Uvod u baze podataka',
-    duration: '3',
-    date: '20.02.2023',
-  },
-  {
-    index: '2',
-    name: 'Razvojni ciklus baze podataka',
-    duration: '3',
-    date: '27.02.2023',
-  },
-];
-
 const LecturesPage = () => {
+  let counter = 1;
+  const [data, setData] = useState([]);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetschAllLectures = async () => {
+      try {
+        const res = await axios.get(
+          'http://localhost:8800/profesori/predavanja'
+        );
+        setData([...res.data]);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetschAllLectures();
+  }, []);
 
   const navigateHandler = (e) => {
     e.preventDefault();
@@ -31,7 +35,10 @@ const LecturesPage = () => {
     <div className={classes.lecturesPage}>
       <h2 className={classes.title}>Predavanja</h2>
       <div className={classes.lecturesInfo}>
-        <p>Broj održanih predavanja: 2</p>
+        <p>
+          Broj održanih predavanja: {data.length}
+          {console.log(data)}
+        </p>
         <p>Preostali broj časova: 39</p>
       </div>
       <div className={classes.lectures}>
@@ -44,8 +51,8 @@ const LecturesPage = () => {
           <p className={classes.lectureQR}>QR</p>
         </div>
         <div className={classes.tableInfoLine}></div>
-        {DUMMY_LECTURES.map((lecture) => (
-          <Lecture key={lecture.index} info={lecture} />
+        {data.map((lecture) => (
+          <Lecture counter={counter++} key={lecture.id} info={lecture} />
         ))}
       </div>
       <ButtonBordered onClick={navigateHandler}>+</ButtonBordered>
